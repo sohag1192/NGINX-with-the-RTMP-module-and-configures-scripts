@@ -1,3 +1,5 @@
+# NGINX-with-the-RTMP-module-and-configures-scripts   [![Hits](https://hits.sh/github.com/sohag1192/NGINX-with-the-RTMP-module-and-configures-scripts.svg?view=today-total&style=for-the-badge&color=ff1885&labelColor=fe7d37)](https://hits.sh/github.com/sohag1192/NGINX-with-the-RTMP-module-and-configures-scripts/)
+
 "Script by @Sohag1192", which installs NGINX with the RTMP module, sets up two HLS applications (live and hls), serves streams on HTTP , and enables NGINX auto-start at boot.
    
 Ubuntu RTMP HLS:
