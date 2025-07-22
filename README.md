@@ -1,4 +1,4 @@
-"Script by @Sohag1192", which installs NGINX with the RTMP module, sets up two HLS applications (live and hls), serves streams on HTTP port 8080, and enables NGINX auto-start at boot.
+"Script by @Sohag1192", which installs NGINX with the RTMP module, sets up two HLS applications (live and hls), serves streams on HTTP , and enables NGINX auto-start at boot.
    
 Ubuntu RTMP HLS:
    
@@ -10,7 +10,7 @@ Permissions and Using + X with chmod
     ./install-nginx-rtmp-hls.sh
     
     
-"Script by @Sohag1192", which installs NGINX with the RTMP module, sets up two HLS applications (live and hls), serves streams on HTTP port 8080, and enables NGINX auto-start at boot.
+"Script by @Sohag1192", which installs NGINX with the RTMP module, sets up two HLS applications (live and hls), serves streams on HTTP , and enables NGINX auto-start at boot.
 
 Ubuntu RTMP HLS & LIVE:
    
