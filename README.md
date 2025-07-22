@@ -55,3 +55,4 @@ Play Path/Stream Key: test
 		service nginx start   # to start the server
 
 # NGINX-with-the-RTMP-module-and-configures-scripts
+# NGINX-with-the-RTMP-module-and-configures-scripts
