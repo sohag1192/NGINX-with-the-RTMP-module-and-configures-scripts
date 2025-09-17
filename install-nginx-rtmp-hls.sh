@@ -2,13 +2,6 @@
 # Script by @Sohag1192
 # Description: Installs NGINX + RTMP on Ubuntu 20.04 with HLS on port 8080
 
-<<<<<<< HEAD:install-nginx-rtmp-hls.sh
-# Log everything to file
-exec > >(tee -i /var/log/nginx-rtmp-setup.log)
-exec 2>&1
-=======
-exec > /var/log/nginx-rtmp-setup.log 2>&1
->>>>>>> 8fb86c93ea76211eb44543ffbf7e5d36f2ad0847:install.sh
 
 echo "🔧 Updating system..."
 sleep 1
