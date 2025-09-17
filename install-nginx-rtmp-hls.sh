@@ -1,7 +1,6 @@
 #!/bin/bash
 # Script by @Sohag1192
-# Description: Installs NGINX + RTMP on Ubuntu 20.04 with HLS on port 8080
-
+# Description: Installs NGINX + RTMP on Ubuntu 20.04 with HLS on port 80
 
 echo "🔧 Updating system..."
 sleep 1
@@ -19,7 +18,7 @@ cd nginx-1.24.0
 echo "📁 Cloning nginx-rtmp-module..."
 git clone https://github.com/arut/nginx-rtmp-module.git ../nginx-rtmp-module
 
-echo "🛠️ Configuring and compiling NGINX..."
+echo "⚙️ Configuring and compiling NGINX..."
 ./configure --with-http_ssl_module --add-module=../nginx-rtmp-module
 make && sudo make install
 
@@ -27,14 +26,12 @@ echo "📁 Creating HLS directory..."
 sudo mkdir -p /usr/local/nginx/html/hls
 sudo chmod -R 755 /usr/local/nginx/html/hls
 
-echo "⚙️ Writing nginx.conf with RTMP + HLS + HTTP (port 80) config..."
+echo "📝 Writing nginx.conf with RTMP + HLS + HTTP (port 80) config..."
 cat <<EOF | sudo tee /usr/local/nginx/conf/nginx.conf
-worker_processes  1;
-
+worker_processes 1;
 events {
-    worker_connections  1024;
+    worker_connections 1024;
 }
-
 rtmp {
     server {
         listen 1935;
@@ -54,16 +51,15 @@ rtmp {
         }
     }
 }
-
 http {
-    include       mime.types;
-    default_type  application/octet-stream;
-    sendfile        on;
-    keepalive_timeout  65;
+    include mime.types;
+    default_type application/octet-stream;
+    sendfile on;
+    keepalive_timeout 65;
 
     server {
-        listen       80;
-        server_name  localhost;
+        listen 80;
+        server_name localhost;
 
         location / {
             root html;
@@ -87,16 +83,9 @@ wget https://raw.github.com/JasonGiedymin/nginx-init-ubuntu/master/nginx -O /etc
 chmod +x /etc/init.d/nginx
 sudo update-rc.d nginx defaults
 
-<<<<<<< HEAD:install-nginx-rtmp-hls.sh
 echo "▶️ Starting NGINX service..."
 sudo service nginx start
 
 echo "✅ Setup complete!"
 echo "🔗 RTMP URL: rtmp://your-server-ip:1935/hls/stream"
 echo "🌐 HLS Playlist: http://your-server-ip/hls/stream.m3u8"
-=======
-echo "▶️ Starting nginx..."
-sleep 1
-service nginx start
-echo "✅ NGINX is running on ports 1935 (RTMP) and 80 (HTTP)"
->>>>>>> 8fb86c93ea76211eb44543ffbf7e5d36f2ad0847:install.sh
