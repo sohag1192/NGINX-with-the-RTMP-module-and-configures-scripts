@@ -5,9 +5,6 @@
 Ubuntu RTMP HLS:
    
     wget https://raw.githubusercontent.com/sohag1192/NGINX-with-the-RTMP-module-and-configures-scripts/refs/heads/main/install-nginx-rtmp-hls.sh
-    
-Permissions and Using + X with chmod
-
     chmod +x install-nginx-rtmp-hls.sh
     ./install-nginx-rtmp-hls.sh
     
