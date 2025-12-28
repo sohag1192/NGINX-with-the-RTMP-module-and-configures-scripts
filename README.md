@@ -4,6 +4,7 @@
 ![Nginx Version](https://img.shields.io/badge/Nginx-1.24.0-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-blue)
 ![Platform](https://img.shields.io/badge/Platform-Ubuntu%2020.04%20%7C%2022.04-orange)
+![Badge](https://hitscounter.dev/api/hit?url=https%3A%2F%2Fgithub.com%2Fsohag1192%2FNGINX-with-the-RTMP-module-and-configures-scripts&label=&icon=github&color=%23198754&message=&style=flat&tz=UTC)
 
 A shell script to automate the installation of NGINX with the `nginx-rtmp-module`. This setup is specifically optimized for HLS streaming by using `/tmp/hls` (RAM storage) to reduce disk I/O and improve performance.
 
