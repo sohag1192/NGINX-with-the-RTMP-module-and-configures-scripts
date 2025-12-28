@@ -1,6 +1,3 @@
-To get an `.m3u8` output from an RTMP stream, you need two things: the **RTMP Ingest Configuration** (where the video comes in) and the **HLS Settings** (where the video is converted and stored).
-
-Since we are using `/tmp/hls` for speed, here is the exact configuration block for your `nginx.conf` and the URLs to use.
 
 ### 1. The NGINX Configuration Block
 
