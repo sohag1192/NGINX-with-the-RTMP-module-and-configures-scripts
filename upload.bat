@@ -1,8 +1,10 @@
 @echo off
 REM ============================================
-REM  sohag1192/NGINX-with-the-RTMP-module-and-configures-scripts NGINX RTMP + HLS Upload Script
+REM  Repository: sohag1192/NGINX-with-the-RTMP-module-and-configures-scripts
+REM  Purpose   : NGINX RTMP + HLS Upload Script
+REM  Author    : sohag1192
+REM  Date      : %date% %time%
 REM ============================================
-
 cd /d "C:\Users\sohag\Downloads\NGINX-with-the-RTMP-module-and-configures-scripts-main"
 
 REM Initialize repo if not already
