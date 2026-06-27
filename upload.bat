@@ -5,7 +5,7 @@ REM  Purpose   : NGINX RTMP + HLS Upload Script
 REM  Author    : sohag1192
 REM  Date      : %date% %time%
 REM ============================================
-cd /d "C:\Users\sohag\Downloads\NGINX-with-the-RTMP-module-and-configures-scripts-main"
+cd /d "C:\Users\sohag\Downloads\Git_Project\NGINX-with-the-RTMP-module-and-configures-scripts"
 
 REM Initialize repo if not already
 IF NOT EXIST ".git" (
