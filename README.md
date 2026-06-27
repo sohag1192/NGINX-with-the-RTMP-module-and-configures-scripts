@@ -28,7 +28,7 @@ Run the following commands on your Linux server (Ubuntu/Debian recommended) as a
 
 ```bash
 # 1. Clone the repository
-git clone [https://github.com/sohag1192/NGINX-with-the-RTMP-module-and-configures-scripts.git](https://github.com/sohag1192/NGINX-with-the-RTMP-module-and-configures-scripts.git)
+git clone https://github.com/sohag1192/NGINX-with-the-RTMP-module-and-configures-scripts.git
 
 # 2. Enter the directory
 cd NGINX-with-the-RTMP-module-and-configures-scripts
